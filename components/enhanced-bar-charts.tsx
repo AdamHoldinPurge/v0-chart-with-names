@@ -395,9 +395,7 @@ function DashboardContent() {
   })
 
   return (
-    <div
-      className={`min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white p-6 md:p-10 ${poppins.variable} font-sans`}
-    >
+    <div className={`min-h-screen bg-black text-white p-6 md:p-10 ${poppins.variable} font-sans`}>
       <div className="max-w-[1800px] mx-auto h-full flex flex-col">
         {/* Main Content */}
         <div className="flex-1 flex gap-8">
@@ -450,7 +448,7 @@ export default function EnhancedBarCharts() {
   return (
     <Suspense
       fallback={
-        <div className="min-h-screen bg-gray-900 flex items-center justify-center">
+        <div className="min-h-screen bg-black flex items-center justify-center">
           <div className="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-orange-500"></div>
         </div>
       }

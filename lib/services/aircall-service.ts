@@ -197,7 +197,7 @@ export function calculateStandardAgentMetrics(currentTime: Date): UserMetrics {
   } else {
     const elapsed = now - startTime
     const progress = elapsed / totalDuration
-    targetTotal = Math.floor(progress * DAILY_TARGET_POINTS)
+    targetTotal = Math.min(Math.floor(progress * DAILY_TARGET_POINTS), DAILY_TARGET_POINTS)
   }
 
   // Split roughly 50/50 between dials and talk time

@@ -74,9 +74,9 @@ export const API_CONFIG = {
   WORKDAY: {
     START_HOUR: 8,
     START_MINUTE: 30,
-    END_HOUR: 17,
-    END_MINUTE: 0,
-    DAILY_TARGET_POINTS: 300, // Total points expected by end of day
+    END_HOUR: 16, // End at 4:30 PM for Standard calculation
+    END_MINUTE: 30,
+    DAILY_TARGET_POINTS: 300, // Target is 300 points by 4:30 PM
   },
 } as const
 
